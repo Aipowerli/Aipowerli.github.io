@@ -103,8 +103,7 @@
 <blockquote>
 <p><a href="http://blog.sina.com.cn/s/blog_61c0518f0100f0lg.html。" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_61c0518f0100f0lg.html。</a></p>
 </blockquote>
-<p>在此要提到的是，所有的plot句柄都需要命名，以方便后面美化的处理。另外，建议axis放在首个plot后面。坐标轴的选择满足黄金分割点，不可过满或过疏。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">hFit = plot(xfit, yfit ); hold on;axis([xmin xmax ymin ymax]);</span><br><span class="line">hE  = errorbar(xdata_m, ydata_m, ydata_s);</span><br><span class="line">hData = line(xVdata, yVdata );</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 图布中的其他图形的绘制</span><br><span class="line"></span><br><span class="line">1）标注</span><br><span class="line"></span><br><span class="line">标注包括矩形和箭头，矩形的命令为rectangle，箭头的命令为annotation/arrow(file exchange: https://au.mathworks.com/matlabcentral/fileexchange/278-arrow)</span><br></pre></td></tr></table></figure>
+<p>在此要提到的是，所有的plot句柄都需要命名，以方便后面美化的处理。另外，建议axis放在首个plot后面。坐标轴的选择满足黄金分割点，不可过满或过疏。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">hFit = plot(xfit, yfit ); hold on;axis([xmin xmax ymin ymax]);</span><br><span class="line">hE  = errorbar(xdata_m, ydata_m, ydata_s);</span><br><span class="line">hData = line(xVdata, yVdata );</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">### 图布中的其他图形的绘制</span><br><span class="line"></span><br><span class="line">1）标注</span><br><span class="line"></span><br><span class="line">标注包括矩形和箭头，矩形的命令为rectangle，箭头的命令为annotation/arrow(file exchange: https://au.mathworks.com/matlabcentral/fileexchange/278-arrow)</span><br></pre></td></tr></table></figure></p>
 <p>rectangle(‘Position’,[left bottom width height],’LineWidth’,2,’EdgeColor’,’r’);<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2）柱状图，需要命令为bar</span><br><span class="line"></span><br><span class="line">3）饼状图，三维图</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">### 图布中的图示说明 (xlabel,ylabel ,legend,text,title...)</span><br><span class="line"></span><br><span class="line">1）legend可以将之前命名的plot的句柄显示在图上作为图标。</span><br><span class="line"></span><br><span class="line">2）xlabel和ylabel确定位置和命名。</span><br><span class="line"></span><br><span class="line">```hlegend=legend([pltname1, pltname2, pltname3…],’DisN1’ , ’DisN2’ , ’DisN3’ …);</span><br><span class="line">hXLabel=xlabel(&apos;x(m)&apos;,&apos;Position&apos;,[110,-2.2],&apos;FontSize&apos;,10);</span><br><span class="line">hYLabel=ylabel(&apos;y(m)&apos;)</span><br></pre></td></tr></table></figure></p>
 <p>需要注意的是，图示说明也需要命名句柄。</p>
 <p>3）title</p>
@@ -140,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/18/学术工具/matlab学术论文绘图/" data-id="cjikdlv110001swmk2i98nfu1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/06/18/学术工具/matlab学术论文绘图/" data-id="cjikdryhp0001hwmkhs8pxssy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -181,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/11/introduction/" data-id="cjikdluz40000swmkxyye71lv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/06/11/introduction/" data-id="cjikdrygj0000hwmk769gdphf" class="article-share-link">Share</a>
       
       
     </footer>
